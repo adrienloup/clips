@@ -1,6 +1,6 @@
 # One Clip... Two Clips... Three Clips...
 
-An incremental game, a clicker game, a tap game and an idle game. Inspired by "Universal Paperclips" developed just for fun.
+An incremental game, a clicker game, a tap game and an idle game inspired by "Universal Paperclips".
 
 [https://adrienloup.github.io/clips](https://adrienloup.github.io/clips)
 
