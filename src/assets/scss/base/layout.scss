@@ -9,14 +9,14 @@
   }
 }
 
-:root {
+body {
   overflow-x: hidden;
-  background-color: var(--color-neutral-2);
+  background-color: var(--color-1);
   line-height: 1;
   font-family: var(--font-text), sans-serif;
-  font-weight: var(--font-weight);
+  font-weight: normal;
   font-size: 16px;
-  color: var(--color-neutral-5);
+  color: var(--color-2);
 }
 
 #_clips_3mma_0 {
@@ -25,5 +25,5 @@
   grid-template-rows: 1fr auto;
   position: relative;
   min-height: 100vh;
-  background-color: var(--color-neutral-1);
+  background-color: var(--color-3);
 }

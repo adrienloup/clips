@@ -6,6 +6,7 @@
   width: 280px;
   height: 80px;
   padding: var(--spacing-s);
+  border: var(--border-size) solid var(--color-neutral-4);
 
   &::after {
     content: '';
@@ -23,7 +24,7 @@
 .label {
   position: relative;
   z-index: 2;
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
 }
 
 @keyframes Progress {

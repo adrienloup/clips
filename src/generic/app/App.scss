@@ -1,1 +1,3 @@
-@use '@/src/assets/scss/base/index' as *;
+@use '@/src/assets/scss/base' as *;
+@use '@/src/assets/scss/themes/light.module' as *;
+@use '@/src/assets/scss/themes/dark.module' as *;

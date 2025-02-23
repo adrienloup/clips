@@ -13,7 +13,7 @@ export const FooterComponent = () => {
     >
       <ButtonComponent
         className={styles.button}
-        href="https://github.com/adrienloup/paperclips"
+        href="https://github.com/adrienloup/clips"
       >
         {t('common.copy', { version: version })}
       </ButtonComponent>

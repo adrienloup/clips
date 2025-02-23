@@ -6,6 +6,7 @@
   display: flex;
   align-items: flex-start;
   margin-left: -15rem;
+  background: hsl(89, 85%, 66%);
   transition-duration: 200ms;
   transition-property: margin-left;
   transition-timing-function: var(--ease-expo);
@@ -19,7 +20,23 @@
 .inside {
   width: 15rem;
   height: 100%;
-  background-color: var(--color-neutral-3);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  //background-image: linear-gradient(
+  //  60deg,
+  //  hsl(60, 100%, 50%),
+  //  hsl(24, 100%, 50%),
+  //  hsl(336, 100%, 50%)
+  //);
+  //background-image: linear-gradient(to right, #5468fb 0%, #46d697 100%);
+  //background-image: linear-gradient(60deg, hsl(336, 100%, 50%), hsl(300, 100%, 50%), hsl(315, 100%, 60%));
+  background-image: linear-gradient(
+    60deg,
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  animation: Gradient 10s alternate infinite;
 }
 
 .inner {
@@ -36,12 +53,18 @@
   flex-direction: column;
   gap: var(--spacing-s);
   padding: var(--spacing-s);
-  background-color: var(--color-neutral-3);
-  font-size: var(--font-size-m);
+  background-color: var(--color-1);
+  font-size: var(--font-size-s);
   color: var(--color-neutral-5);
 
   &:focus-visible {
     outline: var(--border-size) solid var(--color-solid-4);
     outline-offset: calc(-1 * var(--border-size));
+  }
+}
+
+@keyframes Gradient {
+  50% {
+    background-position: 100% 50%;
   }
 }

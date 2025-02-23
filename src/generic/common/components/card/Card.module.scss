@@ -1,0 +1,67 @@
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+  //width: 100%;
+  padding: var(--spacing-s);
+  //background-color: var(--color-neutral-2);
+  //border-radius: 0.35rem;
+  //
+  //@include tablet-portrait {
+  //  width: calc((100vw - 5rem) / 2);
+  //}
+  //
+  //@include desktop {
+  //  width: calc((100vw - 6rem) / 3);
+  //}
+  //
+  //@include widescreen {
+  //  width: calc((100vw - 8rem) / 4);
+  //}
+
+  //display: inline-block;
+  //width: 100%;
+  //margin-top: var(--spacing-m);
+  //padding: var(--spacing-m);
+  //
+  //background-color: #e2e2e2;
+  //border-radius: 2rem;
+
+  background-color: var(--color-1);
+  margin: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+@for $i from 2 through 36 {
+  .card:nth-child(#{$i}) {
+    $h: (random(400) + 100) + px;
+    height: $h;
+  }
+}
+
+.title {
+  align-self: end;
+  text-transform: uppercase;
+  font-size: var(--font-size-m);
+  color: var(--color-neutral-4);
+  opacity: 0.5;
+}
+
+.button {
+  padding: 1.25rem;
+  background-color: var(--color-solid-1);
+  border-radius: 2.75rem;
+  font-family: var(--font-text), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-s);
+  color: var(--color-neutral-1);
+
+  &:focus-visible {
+    outline: 0.25rem solid var(--color-solid-4);
+  }
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+}

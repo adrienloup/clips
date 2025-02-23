@@ -1,0 +1,17 @@
+@mixin if-dark {
+  ._dark_3mma_0_ {
+    @content;
+  }
+}
+
+@mixin dark {
+  --color-1: var(--color-neutral-3);
+  --color-2: var(--color-neutral-2);
+  //--color-3: var(--color-neutral-3);
+}
+
+:root {
+  @include if-dark {
+    @include dark();
+  }
+}

@@ -1,0 +1,34 @@
+.dial {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: var(--spacing-s);
+  background-color: var(--color-3);
+}
+
+.animate {
+  animation: Appear 800ms var(--ease-quad);
+  will-change: background-color;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+.label {
+  font-size: var(--font-size-xs);
+  color: var(--color-neutral-4);
+}
+
+.number {
+  font-size: var(--font-size-m);
+  color: var(--color-primary);
+}
+
+@keyframes Appear {
+  0% {
+    background-color: var(--color-solid-2);
+  }
+}

@@ -1,0 +1,57 @@
+import { State } from '@/src/pages/game/Game.type.ts';
+
+export const initialState: State = {
+  clips: 0,
+  clipsCost: 0.2,
+  clipsStock: 0,
+  clipsTransit: 0,
+  clipsPerSecond: 0,
+  clipsBonus: 0,
+  funds: 0,
+  fundsPerSecond: 0,
+  wires: 100,
+  wiresCost: 20,
+  wiresStock: 100,
+  wiresBonus: 0,
+  publicDemand: 0.5,
+  marketing: 1,
+  marketingCost: 100,
+  autoClippers: 0,
+  autoClippersCost: 5,
+  autoClippersBonus: 1,
+  megaClippers: 0,
+  megaClippersCost: 500,
+  productionBonus: 0.02,
+  trust: 2,
+  trustTransit: 0,
+  trustCost: 8000,
+  processors: 1,
+  memory: 1,
+  operations: 0,
+  operationsLimit: 0,
+  creativity: 0,
+  marketingFeature: {
+    show: true,
+    animate: true,
+  },
+  resourcesFeature: {
+    show: true,
+    animate: true,
+  },
+  revTrackerFeature: {
+    show: true,
+    animate: true,
+  },
+  fundsPerSecondFeature: {
+    show: false,
+    animate: true,
+  },
+  megaClippersFeature: {
+    show: true,
+    animate: true,
+  },
+  driosReInitializationFeature: {
+    show: true,
+    animate: true,
+  },
+};

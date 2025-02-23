@@ -1,0 +1,11 @@
+.debug {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #fde2f0;
+}
+
+.inner {
+  padding: var(--spacing-s) var(--spacing-s) var(--spacing-s)
+    calc(var(--spacing-l) + var(--spacing-s));
+  color: #ff0076;
+}

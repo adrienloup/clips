@@ -1,0 +1,12 @@
+.clips {
+  //flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-l) var(--spacing-m) var(--spacing-m);
+  //background: -webkit-linear-gradient(180deg, #FF167F 4.86%, #FF7901 100%);
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+  font-weight: normal;
+  font-size: var(--font-size-l);
+  color: var(--color-primary);
+}

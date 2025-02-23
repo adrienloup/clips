@@ -1,0 +1,40 @@
+.project {
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+  padding: var(--spacing-s);
+  background-color: var(--color-neutral-3);
+  border-radius: 0.35rem;
+  line-height: 1.1;
+  text-align: left;
+  font-family: var(--font-text), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-s);
+  color: var(--color-primary);
+
+  &:focus-visible {
+    outline: 0.25rem solid var(--color-solid-4);
+  }
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
+.animate {
+  animation: Appear 800ms var(--ease-quad);
+  will-change: background-color;
+}
+
+.icon {
+  position: relative;
+  top: -2px;
+  align-self: baseline;
+  font-size: var(--font-size-m);
+}
+
+@keyframes Appear {
+  0% {
+    background-color: var(--color-solid-2);
+  }
+}

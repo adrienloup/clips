@@ -7,11 +7,11 @@ export const NavigationComponent = () => {
       className={styles.navigation}
       role="navigation"
     >
-      <Link to={'/paperclips/summary'}>summary</Link>
+      <Link to={'/clips/summary'}>summary</Link>
       <br />
-      <Link to={'/paperclips/explore'}>explore</Link>
+      <Link to={'/clips/explore'}>explore</Link>
       <br />
-      <Link to={'/paperclips/'}>game</Link>
+      <Link to={'/clips/'}>game</Link>
     </nav>
   );
 };

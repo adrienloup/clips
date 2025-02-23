@@ -1,14 +1,10 @@
-import {
-  ComponentPropsWithoutRef,
-  ComponentType,
-  ElementType,
-  FunctionComponent,
-} from 'react';
+import { ComponentPropsWithoutRef, ComponentType, ElementType, FunctionComponent } from 'react';
 
 import { Children } from '@/src/generic/types/Children.type.ts';
 import { LanguageProvider } from '@/src/generic/i18n/Language.provider.tsx';
 import { HeaderProvider } from '@/src/generic/common/components/header/Header.provider.tsx';
 import { ThemeProvider } from '@/src/generic/theme/Theme.provider.tsx';
+import { GameProvider } from '@/src/pages/game/Game.provider.tsx';
 
 type ProvidersType = [
   ComponentType<{ children: Children }>,
@@ -26,6 +22,9 @@ const allProviders = (providers: ProvidersType) =>
     ({ children }: { children: Children }) => <>{children}</>
   );
 
-export const Provider: FunctionComponent<{ children: Children }> = allProviders(
-  [[LanguageProvider], [HeaderProvider], [ThemeProvider]]
-);
+export const Provider: FunctionComponent<{ children: Children }> = allProviders([
+  [LanguageProvider],
+  [HeaderProvider],
+  [ThemeProvider],
+  [GameProvider],
+]);

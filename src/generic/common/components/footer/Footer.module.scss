@@ -6,7 +6,7 @@
 }
 
 .button {
-  padding: var(--spacing-m);
+  padding: var(--spacing-m) var(--spacing-l) var(--spacing-m) var(--spacing-m);
   background: none;
   font-family: var(--font-text), sans-serif;
   font-weight: var(--font-weight);
