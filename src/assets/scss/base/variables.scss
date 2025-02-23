@@ -1,0 +1,52 @@
+@mixin font {
+  --font-text: Futura, 'Trebuchet MS', Arial, sans-serif;
+  --font-icon: 'Icon';
+}
+
+@mixin color {
+  --color-neutral-1: #ffffff;
+  --color-neutral-2: #f9f9f9;
+  --color-neutral-3: #ededed;
+  --color-neutral-4: #989797;
+  --color-neutral-5: #000;
+  --color-primary: #0053ff;
+  --color-primary-dark: #0044dd;
+  --color-solid-2: #62ff00;
+  --color-solid-3: #ff0;
+  --color-solid-4: #ff8c00;
+  --color-solid-5: #f10;
+}
+
+@mixin size {
+  --font-size-l: 4rem; // 48px
+  --font-size-m: 2rem; // 32px
+  --font-size-s: 1rem; // 16px
+}
+
+@mixin bold {
+  --font-weight: bold;
+}
+
+@mixin spacing {
+  --spacing-l: 2rem; // 32px
+  --spacing-m: 1rem; // 16px
+  --spacing-s: 0.5rem; // 8px
+}
+
+@mixin border {
+  --border-size: 0.25rem; // 4px
+}
+
+@mixin easing {
+  --ease-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-expo: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+:root {
+  @include font();
+  @include color();
+  @include size();
+  @include bold();
+  @include spacing();
+  @include easing();
+}

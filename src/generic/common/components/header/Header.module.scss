@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  z-index: 2;
+  grid-column: 1;
+  grid-row: span 2;
+  display: flex;
+  align-items: flex-start;
+  margin-left: -15rem;
+  transition-duration: 200ms;
+  transition-property: margin-left;
+  transition-timing-function: var(--ease-expo);
+
+  &.open {
+    margin-left: 0;
+    transition-duration: 400ms;
+  }
+}
+
+.inside {
+  width: 15rem;
+  height: 100%;
+  background-color: var(--color-neutral-3);
+}
+
+.inner {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+  padding: var(--spacing-s);
+  background-color: var(--color-neutral-3);
+  font-size: var(--font-size-m);
+  color: var(--color-neutral-5);
+
+  &:focus-visible {
+    outline: var(--border-size) solid var(--color-solid-4);
+    outline-offset: calc(-1 * var(--border-size));
+  }
+}

@@ -1,0 +1,26 @@
+.dashboard {
+  columns: 4 20rem;
+  column-gap: var(--spacing-m);
+  padding: var(--spacing-m) var(--spacing-m) 0;
+
+  div {
+    background-color: var(--color-neutral-2);
+    border-radius: 0.25rem;
+    color: white;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  @for $i from 1 through 36 {
+    div:nth-child(#{$i}) {
+      $h: (random(400) + 100) + px;
+      height: $h;
+      line-height: $h;
+    }
+  }
+}

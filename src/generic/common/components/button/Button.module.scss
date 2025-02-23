@@ -1,0 +1,16 @@
+.button {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+}
